@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import TodoInput from "./components/TodoInput";
 import TodoList from "./components/TodoList";
-
+import Author from "./components/Author";
 import "bootstrap/dist/css/bootstrap.min.css";
 import uuid from "uuid";
 
@@ -61,6 +61,7 @@ class App extends Component {
   render() {
     return (
       <div className="conatiner">
+        <Author></Author>
         <div className="row">
           <div className="col-10 mx-auto col-md-8 mt-4">
             <TodoInput
